@@ -1,40 +1,248 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Proposal presentation</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Josefin+Slab" rel="stylesheet">
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="theme.css">
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section id="#title">
-					<h1>Integrating Automation and Drawing</h1>
-					<h2>in Visualization Design Workflows</h2>
-				</section>
-				<section>Slide 2
-					<aside class="notes">
-						Notes
-					</aside>
-				</section>
-			</div>
+	<title>Proposal presentation</title>
+
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100|Josefin+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="theme.css">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section id="title" class="center">
+				<h2 class="middle bashful">Integrating</h2>
+				<h1 class="middle">
+						<span class="lightBlue">Automation</span>
+						<span>and</span>
+						<span class="lightGreen">Drawing</span>
+					</h1>
+				<h3 class="middle bashful">in Visualization Design Workflows</h3>
+				<aside class="notes">
+					My proposed research focuses on two fundamentally different ways of working: automation and drawing
+				</aside>
+			</section>
+			<section id="modality" class="center">
+				<h2 class="middle invisible">Integrating</h2>
+				<h1 class="middle">
+						<span class="lightBlue">Automation</span>
+						<span class="invisible">and</span>
+						<span class="lightGreen">Drawing</span>
+					</h1>
+				<h3 class="middle invisible">in Visualization Design Workflows</h3>
+				<div class="fragment" style="
+					    position: fixed;
+					    left: 43%;
+					    bottom: 150px;
+					    transform: rotate(-10deg);
+					    font-size: 2em;">modalities</div>
+				<aside class="notes">
+					- Throughout this talk, I'll refer to each of these as "modalities" - When you're creating a visualization, you really have to
+				</aside>
+			</section>
+			<section id="motivation">
+				<h1>Motivation</h1>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="contributionSummary">
+				<h1>Contribution Summary</h1>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="relatedWork" class="center">
+				<h1>Related Work</h1>
+				<ul>
+					<li class="fragment">
+						<span class="lightBlue">Automated</span> Visualization Toolkits
+					</li>
+					<li class="fragment">
+						<span class="lightGreen">Drawing</span> Software
+					</li>
+					<li class="fragment">Hybrid-Modality Tools</li>
+					<li class="fragment">Transitions Between Modalities
+						<ul>
+							<li class="fragment">
+								<span class="lightBlue">Automation</span> to
+								<span class="lightGreen">Drawing</span>
+							</li>
+							<li class="fragment">
+								<span class="lightGreen">Drawing</span> to
+								<span class="lightBlue">Automation</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="automatedToolkits">
+				<h1 class="cozy">Related Work</h1>
+				<h3>
+						<span class="lightBlue">Automated</span>
+						<span class="bashful">Visualization Toolkits</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="drawingSoftware">
+				<h1 class="cozy">Related Work</h1>
+				<h3>
+						<span class="lightGreen">Drawing</span>
+						<span class="bashful">Software</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="hybridTools">
+				<h1 class="cozy">Related Work</h1>
+				<h3 class="bashful">Hybrid-Modality Tools</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="transitions">
+				<h1 class="cozy">Related Work:
+						<span class="bashful">Transitions</span>
+					</h1>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="automationToDrawing">
+				<h1 class="cozy">Related Work:
+						<span class="bashful">Transitions</span>
+					</h1>
+				<h3>
+						<span class="lightBlue">Automation</span>
+						to
+						<span class="lightGreen">Drawing</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="drawingToAutomation">
+				<h1 class="cozy">Related Work:
+						<span class="bashful">Transitions</span>
+					</h1>
+				<h3>
+						<span class="lightGreen">Drawing</span>
+						to
+						<span class="lightBlue">Automation</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="aviTitle" class="center">
+				<h1 class="cozy">How do we know?</h1>
+				<h3 class="bashful">Interviews, observations of designers</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="aviParticipants">
+				<h1 class="cozy">How do we know?</h1>
+				<h3 class="bashful">Designers, context</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="aviPatterns">
+				<h1 class="cozy">How do we know?</h1>
+				<h3 class="bashful">What we saw</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="aviThemes">
+				<h1 class="cozy">How do we know?</h1>
+				<h3 class="bashful">Opportunities</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="whyToWhat" class="center">
+				<h1>Supporting iteration</h1>
+				<ul>
+					<li>Bridge Model: iteration with
+						<span class="lightBlue">automated</span> visualizations
+					</li>
+					<li>Proposed research: iteration with
+						<span class="lightGreen">drawn</span> visualizations
+					</li>
+				</ul>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="bridgeModelTitle" class="center">
+				<h1 class="cozy">Bridge Model</h1>
+				<h3>
+						<span class="bashful">Iteration with</span>
+						<span class="lightBlue">automated</span>
+						<span class="bashful">visualizations</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="idealizedWorkflow">
+				<h1 class="cozy">Bridge Model</h1>
+				<h3>
+						<span class="bashful">Iteration with</span>
+						<span class="lightBlue">automated</span>
+						<span class="bashful">visualizations</span>
+					</h3>
+				<svg width="1920" height="800">
+					<text x="480" y="2em" text-anchor="middle" class="lightBlue">
+						Automated tool</text>
+					<text x="1440" y="2em" text-anchor="middle" class="lightGreen">
+						Drawing tool</text>
+				</svg>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
+			<section id="proposedResearchTitle" class="center">
+				<h1 class="cozy">Proposed research</h1>
+				<h3>
+						<span class="bashful">Iteration with</span>
+						<span class="lightGreen">drawn</span>
+						<span class="bashful">visualizations</span>
+					</h3>
+				<aside class="notes">
+					Notes
+				</aside>
+			</section>
 		</div>
+	</div>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
-		<script src="main.js"></script>
-	</body>
+	<script src="setupBuilds.js"></script>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script src="main.js"></script>
+	<script type="application/javascript" src="builds/idealizedWorkflow.js"></script>
+</body>
+
 </html>

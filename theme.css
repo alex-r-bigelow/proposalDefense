@@ -1,9 +1,9 @@
 /**
- * Black theme for reveal.js. This is the opposite of the 'white' theme.
+ * Josefin / Colorbrewer theme, based on Hakim el Hattab's Black theme.
  *
- * By Hakim El Hattab, http://hakim.se
+ * By Alex Bigelow
  */
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100|Josefin+Slab:400');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300|Josefin+Slab:300,900');
 section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
   color: #222; }
 
@@ -16,24 +16,33 @@ body {
 
 .reveal {
   font-family: "Josefin Slab", Courier, serif;
-  font-size: 42px;
-  font-weight: normal;
-  color: #fff; }
+  font-size: 50pt;
+  font-weight: 300;
+  color: #ddd; }
 
 ::selection {
-  color: #fff;
-  background: #bee4fd;
+  color: #ddd;
+  background: #aaa;
   text-shadow: none; }
 
 ::-moz-selection {
-  color: #fff;
-  background: #bee4fd;
+  color: #ddd;
+  background: #aaa;
   text-shadow: none; }
+
+.reveal .slides {
+  border: 1px solid #bada55;
+}
 
 .reveal .slides > section,
 .reveal .slides > section > section {
+  text-align: left;
   line-height: 1.3;
   font-weight: inherit; }
+.reveal .slides > section.middle,
+.reveal .slides > section > section.middle {
+  text-align: center;
+}
 
 /*********************************************
  * HEADERS
@@ -44,30 +53,50 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 30px;
   color: #fff;
   font-family: "Josefin Sans", Helvetica, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0.1em;
+  text-align: left;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
 
 .reveal h1 {
-  font-size: 2.5em; }
-
-.reveal h2 {
   font-size: 1.6em; }
 
-.reveal h3 {
+.reveal h2 {
   font-size: 1.3em; }
+
+.reveal h3 {
+  font-size: 1em; }
 
 .reveal h4 {
   font-size: 1em; }
 
 .reveal h1 {
   text-shadow: none; }
+
+.reveal h1.middle,
+.reveal h2.middle,
+.reveal h3.middle,
+.reveal h4.middle,
+.reveal h5.middle,
+.reveal h6.middle {
+  margin-left: 0;
+  text-align: center;
+}
+
+.reveal h1.cozy,
+.reveal h2.cozy,
+.reveal h3.cozy,
+.reveal h4.cozy,
+.reveal h5.cozy,
+.reveal h6.cozy {
+  margin-bottom: -20px;
+}
 
 /*********************************************
  * OTHER
@@ -85,7 +114,8 @@ body {
 
 .reveal strong,
 .reveal b {
-  font-weight: bold; }
+  color: #fff;
+  font-weight: 900; }
 
 .reveal em {
   font-style: italic; }
@@ -101,12 +131,6 @@ body {
   list-style-type: decimal; }
 
 .reveal ul {
-  list-style-type: disc; }
-
-.reveal ul ul {
-  list-style-type: square; }
-
-.reveal ul ul ul {
   list-style-type: circle; }
 
 .reveal ul ul,
@@ -117,7 +141,7 @@ body {
   margin-left: 40px; }
 
 .reveal dt {
-  font-weight: bold; }
+  font-weight: 900; }
 
 .reveal dd {
   margin-left: 40px; }
@@ -168,7 +192,7 @@ body {
   border-spacing: 0; }
 
 .reveal table th {
-  font-weight: bold; }
+  font-weight: 900; }
 
 .reveal table th,
 .reveal table td {
@@ -207,20 +231,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #42affa;
+  color: #ccc;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #8dcffc;
+  color: #eee;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #068de9; }
+  background: #666; }
 
 /*********************************************
  * IMAGES
@@ -228,7 +252,7 @@ body {
 .reveal section img {
   margin: 15px 0px;
   background: rgba(255, 255, 255, 0.12);
-  border: 4px solid #fff;
+  border: 4px solid #ddd;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); }
 
 .reveal section img.plain {
@@ -242,23 +266,156 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #42affa;
+  border-color: #fff;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #42affa; }
+  color: #ddd; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #42affa; }
+  color: #ddd; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*********************************************
+ * Color scheme overrides
+ *********************************************/
+/*
+.reveal .green {
+  color: #1b9e77; }
+
+.reveal .orange {
+  color: #d95f02; }
+
+.reveal .purple {
+  color: #7570b3; }
+
+.reveal .pink {
+  color: #e7298a; }
+
+.reveal .neongreen {
+  color: #66a61e; }
+
+.reveal .yellow {
+  color: #e6ab02; }
+
+.reveal .brown {
+  color: #a6761d; }
+
+.reveal .grey {
+  color: #666666; }
+
+.reveal .lightgreen {
+  color: #b3e2cd; }
+
+.reveal .lightorange {
+  color: #fdcdac; }
+
+.reveal .lightpurple {
+  color: #cbd5e8; }
+
+.reveal .lightpink {
+  color: #f4cae4; }
+
+.reveal .lightneongreen {
+  color: #e6f5c9; }
+
+.reveal .lightyellow {
+  color: #fff2ae; }
+
+.reveal .lightbrown {
+  color: #f1e2cc; }
+*/
+
+.reveal .invisible {
+  color: transparent;
+  fill: transparent;
+  stroke: transparent;
+}
+
+.reveal .white {
+ color: #ddd;
+ fill: #ddd;
+ stroke: #ddd;
+}
+
+.reveal .bashful {
+  color: #aaa;
+  fill: #aaa;
+  stroke: #aaa;
+}
+
+.reveal .black {
+  color: #222;
+  fill: #222;
+  stroke: #222;
+}
+
+.reveal .lightgrey {
+  color: #ccc;
+  fill: #ccc;
+  stroke: #ccc;
+}
+
+.reveal .teal {
+  color: #3d6b5f;
+  stroke: #3d6b5f;
+  fill: #3d6b5f;
+  /* color: hsl(165, 57%, 52%);
+  color: #3ec9a6; */
+}
+.reveal .darkBlue {
+  color: #3d445d;
+  stroke: #3d445d;
+  fill: #3d445d;
+  /* color: hsl(222, 40%, 50%);
+  color: #4c6bb3; */
+}
+.reveal .mediumBlue {
+  color: #566aa0;
+  stroke: #566aa0;
+  fill: #566aa0;
+  /* color: hsl(222, 80%, 65%);
+  color: #5e89ed; */
+}
+.reveal .lightBlue {
+  color: #768dc7;
+  stroke: #768dc7;
+  fill: #768dc7;
+  /* color: hsl(222, 75%, 80%);
+  color: #a6bdf2; */
+}
+.reveal .darkGreen {
+  color: #394935;
+  stroke: #394935;
+  fill: #394935;
+  /* color: hsl(108, 25%, 40%);
+  color: #57804d; */
+}
+.reveal .mediumGreen {
+  color: #517449;
+  stroke: #517449;
+  fill: #517449;
+  /* color: hsl(108, 50%, 65%);
+  color: #8bd279; */
+}
+.reveal .lightGreen {
+  color: #6a9f5a;
+  stroke: #6a9f5a;
+  fill: #6a9f5a;
+  /* color: hsl(108, 85%, 80%);
+  color: #b2f7a1; */
+}
+.bridgeModelCircle path {
+  transition: fill .5s ease, stroke .5s ease;
+}
