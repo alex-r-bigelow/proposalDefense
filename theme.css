@@ -52,7 +52,8 @@ body {
 .reveal h3,
 .reveal h4,
 .reveal h5,
-.reveal h6 {
+.reveal h6,
+.reveal text.header {
   margin: 0 0 20px 30px;
   color: #fff;
   font-family: "Josefin Sans", Helvetica, sans-serif;
@@ -361,6 +362,12 @@ body {
   stroke: #222;
 }
 
+.reveal .yellow {
+  color: #e6ab02;
+  fill: #e6ab02;
+  stroke: #e6ab02;
+}
+
 .reveal .lightgrey {
   color: #ccc;
   fill: #ccc;
@@ -416,6 +423,14 @@ body {
   /* color: hsl(108, 85%, 80%);
   color: #b2f7a1; */
 }
+
+/* special stuff I should break into a separate file */
 .bridgeModelCircle path {
   transition: fill .5s ease, stroke .5s ease;
+}
+.bridgeModelCircle path.hollow {
+  fill: none;
+}
+.bridgeModelImage rect {
+  fill: #fff;
 }

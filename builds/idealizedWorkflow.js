@@ -2,6 +2,9 @@
 
 addBuild('idealizedWorkflow', [
   {
+    showBuildTags: [
+      'automatedTitle'
+    ],
     circles: {
       automated: {
         x: 0.25,
@@ -19,7 +22,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       drawing: {
@@ -38,12 +42,16 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }
   },
   {
+    showBuildTags: [
+      'drawingTitle'
+    ],
     circles: {
       automated: {
         x: 0.25,
@@ -61,7 +69,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       drawing: {
@@ -80,12 +89,17 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }
   },
   {
+    showBuildTags: [
+      'drawingTitle',
+      'drawingChange'
+    ],
     circles: {
       automated: {
         x: 0.25,
@@ -103,7 +117,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       drawing: {
@@ -122,7 +137,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       newAutomated: {
@@ -141,12 +157,17 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }
   },
   {
+    showBuildTags: [
+      'drawingTitle',
+      'drawingChange'
+    ],
     circles: {
       drawing: {
         x: 0.75,
@@ -164,7 +185,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       newAutomated: {
@@ -183,12 +205,17 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }
   },
   {
+    showBuildTags: [
+      'drawingTitle',
+      'automatedChange'
+    ],
     circles: {
       drawing: {
         x: 0.75,
@@ -206,7 +233,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       newAutomated: {
@@ -225,7 +253,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       newDrawing: {
@@ -244,12 +273,17 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }
   },
   {
+    showBuildTags: [
+      'drawingTitle',
+      'automatedChange'
+    ],
     circles: {
       newAutomated: {
         x: 0.25,
@@ -267,7 +301,8 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       },
       newDrawing: {
@@ -286,7 +321,56 @@ addBuild('idealizedWorkflow', [
           southwestwest: 'lightgrey',
           southeast: 'lightgrey',
           southeasteast: 'lightgrey',
-          south: 'lightgrey'
+          south: 'lightgrey',
+          center: 'lightgrey'
+        }
+      }
+    }
+  },
+  {
+    showBuildTags: [
+      'drawingTitle',
+      'noArrow'
+    ],
+    circles: {
+      newAutomated: {
+        x: 0.25,
+        y: 0.5,
+        scale: 3,
+        colors: {
+          west: 'lightgrey',
+          northwestwest: 'mediumBlue',
+          northwest: 'mediumBlue',
+          north: 'teal',
+          northeast: 'mediumGreen',
+          northeasteast: 'mediumGreen',
+          east: 'lightgrey',
+          southwest: 'lightgrey',
+          southwestwest: 'lightgrey',
+          southeast: 'lightgrey',
+          southeasteast: 'lightgrey',
+          south: 'lightgrey',
+          center: 'lightgrey'
+        }
+      },
+      newDrawing: {
+        x: 0.75,
+        y: 0.5,
+        scale: 3,
+        colors: {
+          west: 'lightgrey',
+          northwestwest: 'mediumBlue',
+          northwest: 'mediumBlue',
+          north: 'teal',
+          northeast: 'mediumGreen',
+          northeasteast: 'mediumGreen',
+          east: 'lightgrey',
+          southwest: 'lightgrey',
+          southwestwest: 'lightgrey',
+          southeast: 'lightgrey',
+          southeasteast: 'lightgrey',
+          south: 'lightgrey',
+          center: 'lightgrey'
         }
       }
     }

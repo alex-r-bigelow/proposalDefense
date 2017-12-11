@@ -32,7 +32,7 @@
 						<span class="lightGreen">Drawing</span>
 					</h1>
 				<h3 class="middle bashful">in Visualization Design Workflows</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					My proposed research focuses on two fundamentally different ways of working: automation and drawing
 				</aside>
 			</section>
@@ -50,19 +50,19 @@
 					    bottom: 150px;
 					    transform: rotate(-10deg);
 					    font-size: 2em;">modalities</div>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					- Throughout this talk, I'll refer to each of these as "modalities" - When you're creating a visualization, you really have to
 				</aside>
 			</section>
 			<section id="motivation">
 				<h1>Motivation</h1>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="contributionSummary">
 				<h1>Contribution Summary</h1>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -89,7 +89,7 @@
 						</ul>
 					</li>
 				</ul>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -99,7 +99,7 @@
 						<span class="lightBlue">Automated</span>
 						<span class="bashful">Visualization Toolkits</span>
 					</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -109,14 +109,14 @@
 						<span class="lightGreen">Drawing</span>
 						<span class="bashful">Software</span>
 					</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="hybridTools">
 				<h1 class="cozy">Related Work</h1>
 				<h3 class="bashful">Hybrid-Modality Tools</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -124,7 +124,7 @@
 				<h1 class="cozy">Related Work:
 						<span class="bashful">Transitions</span>
 					</h1>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -137,7 +137,7 @@
 						to
 						<span class="lightGreen">Drawing</span>
 					</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -150,35 +150,35 @@
 						to
 						<span class="lightBlue">Automation</span>
 					</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="aviTitle" class="center">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Interviews, observations of designers</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="aviParticipants">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Designers, context</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="aviPatterns">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">What we saw</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="aviThemes">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Opportunities</h3>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -192,46 +192,220 @@
 						<span class="lightGreen">drawn</span> visualizations
 					</li>
 				</ul>
-				<aside class="notes">
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="bridgeModelTitle" class="center">
 				<h1 class="cozy">Bridge Model</h1>
 				<h3>
-						<span class="bashful">Iteration with</span>
-						<span class="lightBlue">automated</span>
-						<span class="bashful">visualizations</span>
-					</h3>
-				<aside class="notes">
+					<span class="bashful">Iteration with</span>
+					<span class="lightBlue">automated</span>
+					<span class="bashful">visualizations</span>
+				</h3>
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="idealizedWorkflow">
-				<h1 class="cozy">Bridge Model</h1>
-				<h3>
-						<span class="bashful">Iteration with</span>
-						<span class="lightBlue">automated</span>
-						<span class="bashful">visualizations</span>
-					</h3>
-				<svg width="1920" height="800">
-					<text x="480" y="2em" text-anchor="middle" class="lightBlue">
-						Automated tool</text>
-					<text x="1440" y="2em" text-anchor="middle" class="lightGreen">
-						Drawing tool</text>
+				<svg width="1920" height="1080">
+					<text x="480" y="250"
+						class="lightBlue header" text-anchor="middle">
+							Automated tool
+					</text>
+					<text x="1440" y="250"
+						data-build="drawingTitle"
+						class="lightGreen header" text-anchor="middle">
+							Drawing tool
+					</text>
+					<text x="1500" y="350"
+						data-build="drawingChange"
+						class="lightGreen" style="font-size:0.75em">
+							Drawn change
+					</text>
+					<text x="420" y="350"
+						data-build="automatedChange"
+						class="lightBlue" text-anchor="end"
+						style="font-size:0.75em">
+							Automated change
+					</text>
+					<g data-build="noArrow" transform="translate(990, 240)">
+						<path
+						  class="yellow"
+							d="m 52.018957,361.14469 11.98344,-11.9834 -51.53082,-51.53081 51.53082,-51.52256 -11.98344,-11.99999 -51.53495112,51.53498 -51.53492188,-51.53498 -11.98343,11.99999 51.530792,51.52256 -51.530792,51.53081 11.98343,11.9834 51.53492188,-51.52664 z"
+							></path>
+						<path
+						  class="white"
+						  d="m -77.729046,349.10746 v -29.39768 h 32.15864 l 22.075153,-22.07514 -22.079313,-22.07938 h -32.15448 v -29.3976 l -89.111994,51.47282 z M 78.697087,319.70978 v -44.15452 h -32.15863 l -22.07931,22.07938 22.07517,22.07514 z
+							"></path>
+					</g>
 				</svg>
-				<aside class="notes">
-					Notes
+				<aside class="notes" data-markdown>
+					Ideally, let's pretend we have a visualization in an automated tool,
+					  that I'm just going to represent with this abstract circle
+					- We'd want to be able to open it in a drawing program
+					- make some changes in the drawing program
+					- and move it back, with the changes, into the automated program
+					- where we could make more changes
+					- and so on and so forth. Unfortunately, we can't do this right now;
+					  current automated visualization tools don't let you edit existing
+						graphics.
+				</aside>
+			</section>
+			<section id="nonTransferableElements">
+				<svg width="1920" height="1080">
+					<text x="480" y="250"
+						class="lightBlue header" text-anchor="middle">
+							Automated tool
+					</text>
+					<text x="1440" y="250"
+						class="lightGreen header" text-anchor="middle">
+							Drawing tool
+					</text>
+					<text x="970" y="880"
+					  data-build="nonTransferableTitle"
+						class="yellow header" text-anchor="middle">
+							Non-transferable elements
+					</text>
+					<text x="1500" y="350"
+						data-build="drawingFeatures"
+						class="lightGreen" style="font-size:0.75em">
+							Color swatches
+					</text>
+					<text x="1650" y="550"
+						data-build="drawingFeatures"
+						class="lightGreen" style="font-size:0.75em">
+							Layers
+					</text>
+					<text x="1500" y="750"
+						data-build="drawingFeatures"
+						class="lightGreen" style="font-size:0.75em">
+							Typography, etc...
+					</text>
+					<text x="420" y="350"
+					  data-build="automationFeatures"
+						class="lightBlue" text-anchor="end"
+						style="font-size:0.75em">
+							Formal rules
+					</text>
+					<text x="270" y="550"
+					  data-build="automationFeatures"
+						class="lightBlue" text-anchor="end"
+						style="font-size:0.75em">
+							Scalability
+					</text>
+					<text x="500" y="750"
+					  data-build="automationFeatures"
+						class="lightBlue" text-anchor="end"
+						style="font-size:0.75em">
+							Layout algorithms, etc.
+					</text>
+				</svg>
+				<aside class="notes" data-markdown>
+					Part of the reason is that our picture is a little simplistic;
+					from an authoring perspective, a visualization is more than
+					just graphics.
+					- Each modality comes with extra, non-transferable elements
+					that only exist in one tool.
+					- For example, on the drawing side,
+					a tool might provide color swatches, layers, or typography
+					support that you can't get anywhere else
+					- An automated tool has formalized rules that make it possible
+					to manipulate graphics in a scalable way, as well as unique features
+					of their own, such as force-directed layouts
+				</aside>
+			</section>
+			<section id="mergeWorkflow">
+				<svg width="1920" height="1080">
+					<text x="480" y="250"
+						class="lightBlue header" text-anchor="middle">
+							Automated tool
+					</text>
+					<text x="1440" y="250"
+						class="lightGreen header" text-anchor="middle">
+							Drawing tool
+					</text>
+					<text x="1500" y="350"
+						data-build="drawingChange"
+						class="lightGreen"
+						style="font-size:0.75em">
+							Drawn change
+					</text>
+					<text x="420" y="350"
+						data-build="automatedChange"
+						class="lightBlue" text-anchor="end"
+						style="font-size:0.75em">
+							Automated change
+					</text>
+					<text x="960" y="620"
+						data-build="mergedChanges"
+						class="teal" text-anchor="middle"
+						style="font-size:0.75em">
+							Merged changes
+					</text>
+				</svg>
+				<aside class="notes" data-markdown>
+					So how do we make this work when the features that we need are spread
+					across multiple programs? The core idea of the bridge model is to make
+					changes in parallel, and merge their effects on the graphics. So to
+					repeat the earlier workflow, we start with an automated visualization,
+					- copy it into the drawing program
+					- make drawing changes
+					- make automated changes
+					- merge the results
+					- and bring the merged result back into each tool
+				</aside>
+			</section>
+			<section id="hboWorkflow">
+				<svg width="1920" height="1080">
+					<text x="75" y="75"
+					  data-build="d3Header"
+						class="lightBlue header" text-anchor="start">
+							D3
+					</text>
+					<text x="1845" y="75"
+					  data-build="illustratorHeader"
+						class="lightGreen header" text-anchor="end">
+							Illustrator
+					</text>
+				</svg>
+				<aside class="notes" data-markdown>
+					In practice, it might look something like this. Let's pretend that
+					I'm creating that HBO infographic from earlier.
+					- I might start by generating the layout with D3
+					- and then exporting that to Illustrator,
+					- where I change the colors and typography
+					- (zoom in) Now if we zoom in, we can see that the actors are sorted
+					  first name... what if I wanted to sort by last name?
+					- (zoom out)
+					- (merge) I would merge my color changes back over to D3
+					- (reintegrate) (zoom in)
+					- where I can change how they're sorted
+					- (zoom out) Now let's imagine that our client comes to us, and they
+					  want the graphic to fit in a square instead of this letter-sized page.
+					- (merge) If we merge back to the Illustrator,
+					- (reintegrate) it's easy to crop off the bottom of the page... but
+					  we're also going to need a new layout because the bottom part of
+						our graphic is going to get cut off
+					- (clean) This time, let's make the change on both sides in parallel.
+					- So we can crop the page on the right using Illustrator
+					- We can implement a new layout on the d3 side,
+					- and merge the changes!
+					- Let's reintegrate the results...
+					- (clean) And now that title is kind of in the wrong spot...
+					- So let's move it with Illustrator
+					- (merge) And merge that back over to d3
+					- (reintegrate)
 				</aside>
 			</section>
 			<section id="proposedResearchTitle" class="center">
 				<h1 class="cozy">Proposed research</h1>
 				<h3>
-						<span class="bashful">Iteration with</span>
-						<span class="lightGreen">drawn</span>
-						<span class="bashful">visualizations</span>
-					</h3>
-				<aside class="notes">
+					<span class="bashful">Iteration with</span>
+					<span class="lightGreen">drawn</span>
+					<span class="bashful">visualizations</span>
+				</h3>
+				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
@@ -242,7 +416,12 @@
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
 	<script src="main.js"></script>
+
+	<!-- load each build spec -->
 	<script type="application/javascript" src="builds/idealizedWorkflow.js"></script>
+	<script type="application/javascript" src="builds/nonTransferableElements.js"></script>
+	<script type="application/javascript" src="builds/mergeWorkflow.js"></script>
+	<script type="application/javascript" src="builds/hboWorkflow.js"></script>
 </body>
 
 </html>
