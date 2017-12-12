@@ -24,7 +24,8 @@ Reveal.initialize({
     }
   ],
   history: true,
-  center: false
+  center: false,
+  autoPlayMedia: true
 });
 
 Reveal.addEventListener('slidechanged', function (event) {

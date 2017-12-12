@@ -33,7 +33,8 @@
 					</h1>
 				<h3 class="middle bashful">in Visualization Design Workflows</h3>
 				<aside class="notes" data-markdown>
-					My proposed research focuses on two fundamentally different ways of working: automation and drawing
+					My proposed research focuses on two fundamentally different ways of
+					working: automation and drawing
 				</aside>
 			</section>
 			<section id="modality" class="center">
@@ -44,30 +45,147 @@
 						<span class="lightGreen">Drawing</span>
 					</h1>
 				<h3 class="middle invisible">in Visualization Design Workflows</h3>
-				<div class="fragment" style="
+				<div class="yellow fragment" style="
 					    position: fixed;
 					    left: 43%;
 					    bottom: 150px;
 					    transform: rotate(-10deg);
 					    font-size: 2em;">modalities</div>
 				<aside class="notes" data-markdown>
-					- Throughout this talk, I'll refer to each of these as "modalities" - When you're creating a visualization, you really have to
+					Throughout this talk, I'll refer to each of these as
+					- "modalities"; with a few exceptions, most software makes you choose
+					one or the other in order to create a visual representation of data
 				</aside>
 			</section>
 			<section id="motivation">
-				<h1>Motivation</h1>
+				<svg width="1920" height="1080"></svg>
 				<aside class="notes" data-markdown>
-					Notes
+					Why do we care?
+					- Consider this infographic that we found in the wild (some of you
+					  have probably seen me use this example before); the overall point of
+					  the visualization is to show that HBO reuses many actors across many
+					  of their shows; actors are listed on the left alphabetically, and
+					  shows are listed on the right alphabetically, and a line indicates
+					  that an actor acted in that show.
+				  - There's an interesting artifact at the bottom, where one actor,
+					  J.D. Williams is out of alphabetical order
+					- and the designer knows about it, because there's a written apology
+					  at the bottom.
+
+						Think about which modality the designer probably used to create
+						this chart. He probably drew the thing in something like Illustrator,
+						and then someone gave him a new data point.
+
+						We can see a tension here between automation and drawing: our
+						designer friend couldn't have used something like Excel or Tableau
+						to create this... not just because one of the actors is out of order,
+						but because you can't create this kind of layout in an automated way
+						without writing code. By using a drawing tool to create it, he's
+						committed himself to the layout, and has to deal with drawing each
+						point one at a time by hand.
+
+						If he were to have written code to create this chart, it would be
+						easy to add new data, or even do things like change the sort order
+						or try different layouts. But using automation would mean that some
+						things—like placing the exact x,y coordinates of the title at the
+						top, experimenting with typography or the color scheme, or even
+						getting the margins right—would be tedious. And all this assumes
+						that our designer has the time to learn how to code.
+
+					- Here's another example. Here, we only see five data points, so
+					  scalability isn't as much of a concern—most of the work that would
+						go into something like this is placing the text and getting the
+						colors right... so a drawing program would probably be a better
+						choice, right?
+
+						Of course, if you look closely, you'll notice that the data shown
+						in the pies doesn't match the data shown in the text. There are two
+						85% slices, and they're different sizes... and the 81 and 52 slices
+						are definitely wrong.
+
+						This is another example of the tension between automation and
+						drawing; most of the work in creating this chart is best done in
+						a drawing program, except that getting thigns precise can be a little
+						tricky... an automated approach kind of gives you precision for free.
 				</aside>
 			</section>
-			<section id="contributionSummary">
+			<section id="contributionSummary" class="center">
 				<h1>Contribution Summary</h1>
+				<ul>
+					<li class="fragment">Interviews and observations of designers working with data</li>
+					<li class="fragment">Bridge Model: iteration with
+						<span class="lightBlue">automated</span> visualizations
+					</li>
+					<li class="fragment">Proposed research: iteration with
+						<span class="lightGreen">drawn</span> visualizations
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
-			<section id="relatedWork" class="center">
-				<h1>Related Work</h1>
+			<section id="relatedWork">
+				<h1 class="cozy">Related Work</h1>
+				<h3 class="bashful">Workflows</h3>
+				<div class="fragment" data-fragment-index="0"
+						 style="position:absolute;right:20px;top:10px;width:850px">
+					<img src="images/dschool.jpg" width="100%"/>
+				</div>
+				<div class="fragment" data-fragment-index="1"
+						 style="position:absolute;left:35px;top:245px;width:995px">
+					<img src="images/dsm.jpg" width="100%"/>
+				</div>
+				<div class="citation fragment" data-fragment-index="1">
+					<h3 class="cozy">Design Study Methodology: Reflections from the Trenches and the Stacks</h3>
+					<p>
+						Michael Sedlmair, Miriah Meyer, and Tamara Munzner
+						<span style="position:absolute;right:20px">Infovis 2012</span>
+					</p>
+				</div>
+				<div class="yellow fragment" data-fragment-index="2" style="
+					    position: fixed;
+					    left: 35%;
+					    bottom: 250px;
+					    transform: rotate(10deg);
+					    font-size: 2em;">iteration</div>
+				<aside class="notes" data-markdown>
+					We're focused on a visualization designer's workflow
+					- which is usually guided by a process model like the d.school's
+					  "emphathize, define, ideate, prototype, test"
+					- or the vis community's 9-stage design study methodology
+					- These process models encourage iteration as a critical component;
+					  it's important to go back to earlier stages in your workflow,
+						especially when you discover something new
+
+					  This means that a designer's exact workflow—or someone's precise
+						path through this space—is impossible to
+					  predict. It would be really inappropriate to try to anticipate or
+						prescribe a precise linear path through these phases.
+				</aside>
+			</section>
+			<section id="workflowQuote">
+				<h1 class="cozy">Related Work</h1>
+				<h3 class="bashful">Workflows</h3>
+				<br/>
+				<blockquote class="center">
+					Developers always [say]: 'here is your flow, you go through these
+					steps, here are the tools, here are the things you can do, here are
+					things you can’t do.'<br/><br/>
+					I don’t think designers want that. Designers want to do what they
+					want to do....<br/>
+					[They] want to create something that you've never seen before.
+				</blockquote>
+				<aside class="notes" data-markdown>
+					The problem is that current software systems do exactly that,
+					especially when data is involved.
+
+				  In the words of one of the designers we interviewed:
+				  (read quote)
+				</aside>
+			</section>
+			<section id="relatedSoftware">
+				<h1 class="cozy">Related Work</h1>
+				<h3 class="bashful">Software</h3>
 				<ul>
 					<li class="fragment">
 						<span class="lightBlue">Automated</span> Visualization Toolkits
@@ -90,66 +208,158 @@
 					</li>
 				</ul>
 				<aside class="notes" data-markdown>
-					Notes
+					With that, let's talk about what software options exist...
 				</aside>
 			</section>
-			<section id="automatedToolkits">
+			<section id="automatedToolkits" data-background="images/code.jpg">
 				<h1 class="cozy">Related Work</h1>
 				<h3>
-						<span class="lightBlue">Automated</span>
-						<span class="bashful">Visualization Toolkits</span>
-					</h3>
+					<span class="lightBlue">Automated</span>
+					<span class="bashful">Visualization Toolkits</span>
+				</h3>
+				<ul>
+					<li class="fragment">Formal specification of rules, computer does the drawing</li>
+					<li class="fragment">Examples: D3, Processing, Excel, Tableau, Gephi</li>
+					<li class="fragment">Pros:
+						<ul>
+							<li>Create precise visual representations of data efficiently</li>
+							<li class="fragment">Scalable; time spent does not depend on data size</li>
+						</ul>
+					<li class="fragment">Cons:
+						<ul>
+							<li><b>Every</b> graphics element must be formally specified,<br/>
+							  either by the user... <span class="fragment">or the toolkit developer</span></li>
+							<li class="fragment">Designers don't use them in isolation</li>
+						</ul>
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
-			<section id="drawingSoftware">
+			<section id="drawingSoftware" data-background="images/sketchpad.jpg">
 				<h1 class="cozy">Related Work</h1>
 				<h3>
-						<span class="lightGreen">Drawing</span>
-						<span class="bashful">Software</span>
-					</h3>
+					<span class="lightGreen">Drawing</span>
+					<span class="bashful">Software</span>
+				</h3>
+				<ul>
+					<li class="fragment">(w.r.t. data:) informal rules, human does the drawing</li>
+					<li class="fragment">Examples: Illustrator, Photoshop, Inkscape</li>
+					<li class="fragment">Pros:
+						<ul>
+							<li>User is free to draw what they want</li>
+							<li class="fragment">Direct manipulation faster, easier than formal specification</li>
+						</ul>
+					<li class="fragment">Cons:
+						<ul>
+							<li>Precision</li>
+							<li class="fragment">Scalability</li>
+						</ul>
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
-			<section id="hybridTools">
+			<section id="hybridTools" data-background="images/bretVictor.png">
 				<h1 class="cozy">Related Work</h1>
 				<h3 class="bashful">Hybrid-Modality Tools</h3>
+				<ul>
+					<li class="fragment" data-fragment-index="0">Mix automation and drawing in same interface, interactions</li>
+					<li class="fragment" data-fragment-index="1">Examples: Lyra, iVisDesigner, DDG, iVoLVER, Data Illustrator</li>
+					<li class="fragment" data-fragment-index="2">Pros:
+						<ul>
+							<li>Automation + Direct manipulation
+								<b class="fragment" data-fragment-index="6">?</b></li>
+						</ul>
+					<li class="fragment" data-fragment-index="3">Cons:
+						<ul>
+							<li>Limited features</li>
+							<li class="fragment" data-fragment-index="4">Usability issues / steep learning curve
+								<b class="fragment" data-fragment-index="5">(why?)</b></li>
+						</ul>
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="transitions">
-				<h1 class="cozy">Related Work:
-						<span class="bashful">Transitions</span>
-					</h1>
+				<h1 class="cozy">Related Work</h1>
+				<h3>
+					<span class="bashful">Transitions</span>
+				</h3>
+				<ul>
+					<li class="fragment">
+						<span class="lightBlue">Automation</span> to
+						<span class="lightGreen">Drawing</span>
+					</li>
+					<li class="fragment">
+						<span class="lightGreen">Drawing</span> to
+						<span class="lightBlue">Automation</span>
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="automationToDrawing">
-				<h1 class="cozy">Related Work:
-						<span class="bashful">Transitions</span>
-					</h1>
+				<h1 class="cozy">Related Work</h1>
 				<h3>
-						<span class="lightBlue">Automation</span>
-						to
-						<span class="lightGreen">Drawing</span>
-					</h3>
+					<span class="bashful">Transitions:</span>
+					<span class="lightBlue">Automation</span>
+					<span class="bashful">to</span>
+					<span class="lightGreen">Drawing</span>
+				</h3>
+				<ul>
+					<li class="fragment">Helper tools: SVG Crowbar, RAW</li>
+					<li class="fragment">Graphics programs designed to edit existing graphics formats</li>
+					<li class="fragment">Grammars: Vega, Vega-lite, ggplot
+						<ul>
+							<li class="fragment">Not designed to be edited with existing drawing programs</li>
+						</ul>
+						<br/>
+					</li>
+					<li class="fragment">Can switch from automation to drawing...<br/>
+						but <b>data bindings</b> are lost</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
 			<section id="drawingToAutomation">
-				<h1 class="cozy">Related Work:
-						<span class="bashful">Transitions</span>
-					</h1>
+				<h1 class="cozy">Related Work</h1>
 				<h3>
-						<span class="lightGreen">Drawing</span>
-						to
-						<span class="lightBlue">Automation</span>
-					</h3>
+					<span class="bashful">Transitions:</span>
+					<span class="lightGreen">Drawing</span>
+					<span class="bashful">to</span>
+					<span class="lightBlue">Automation</span>
+				</h3>
+				<ul>
+					<li class="fragment">Automated programs need data bindings
+						<ul>
+							<li class="fragment">D3 Deconstructor, iVoLVER</li>
+						</ul>
+					</li>
+					<li class="fragment">Automated programs need formal rules
+						<ul>
+							<li class="fragment">Learning <b>visual encodings</b></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="citation fragment">
+					<h3 class="cozy">Reverse-Engineering Visualizations: Recovering Visual Encodings from Chart Images</h3>
+					<p>
+						Jorge Poco, Angela Mayhua, Jeff Heer
+						<span style="position:absolute;right:20px">Infovis 2017</span>
+					</p>
+					<h3 class="cozy">Extracting and Retargeting Color Mappings from Bitmap Images of Visualizations</h3>
+					<p>
+						Jorge Poco, Jeff Heer
+						<span style="position:absolute;right:20px">Eurovis 2017</span>
+					</p>
+				</div>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
@@ -157,6 +367,13 @@
 			<section id="aviTitle" class="center">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Interviews, observations of designers</h3>
+				<div class="citation">
+					<h3 class="cozy">Reflections on How Designers Design With Data</h3>
+					<p>
+						Alex Bigelow, Steven Drucker, Danyel Fisher, and Miriah Meyer
+						<span style="position:absolute;right:20px">AVI 2014</span>
+					</p>
+				</div>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
@@ -164,13 +381,41 @@
 			<section id="aviParticipants">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Designers, context</h3>
+				<div style="text-align:center;width:100%">
+					<img src="images/aviParticipants.svg" style="height:12em;background-color:white"></img>
+				</div>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
 			</section>
-			<section id="aviPatterns">
+			<section id="aviPatterns1">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">What we saw</h3>
+				<ul>
+					<li class="fragment">Designers did not necessarily dislike manual encoding</li>
+					<li class="fragment">The cost of manual encoding prevented variation</li>
+					<li class="fragment">Manual encoding was a form of data exploration</li>
+					<li class="fragment">Data exploration & manipulation related to experience</li>
+					<li class="fragment">High-level elements, followed by sketching in data points</li>
+					<li class="fragment">Encoding was a later consideration</li>
+				</ul>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="aviPatterns2">
+				<h1 class="cozy">How do we know?</h1>
+				<h3 class="bashful">What we saw</h3>
+				<ul>
+					<li class="fragment">Inferences about behavior were often inaccurate</li>
+					<li class="fragment">Encodings remained unchanged until assumptions
+						were shown to be incorrect</li>
+					<li class="fragment">Inferences about structure were often separated
+						from actual data</li>
+					<li class="fragment">Designers did not vary from given data structure</li>
+					<li class="fragment">Designers disliked tools that enforced a workflow</li>
+					<li class="fragment">Automation still resulted in manual labor</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
@@ -178,6 +423,12 @@
 			<section id="aviThemes">
 				<h1 class="cozy">How do we know?</h1>
 				<h3 class="bashful">Opportunities</h3>
+				<ul>
+					<li class="fragment">Manual encoding has its benefits</li>
+					<li class="fragment">Placing data on existing graphics</li>
+					<li class="fragment">Relaxing the sequence of operations</li>
+					<li class="fragment">Creating an effective data abstraction</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
@@ -398,6 +649,85 @@
 					- (reintegrate)
 				</aside>
 			</section>
+			<section id="bridgeModelDesignSpace">
+				<h1 class="cozy">Bridge Model</h1>
+				<h3>
+					<span class="bashful">Iteration with</span>
+					<span class="lightBlue">automated</span>
+					<span class="bashful">visualizations</span>
+				</h3>
+				<p>Design space:</p>
+				<ul>
+					<li class="fragment" data-fragment-index="0">
+						How does a bridge identify what changed in each tool?
+					</li>
+					<li class="fragment" data-fragment-index="1">
+						How does a bridge merge the identified changes?
+					</li>
+					<li class="fragment" data-fragment-index="2">
+						How does a bridge reintegrate the merged results?
+					</li>
+					<li  class="fragment" data-fragment-index="3" style="position:relative;">
+						<span class="fragment fade-out" data-fragment-index="5">
+							How does a bridge infer designer intent ?
+						</span>
+						<b class="fragment fade-in" data-fragment-index="5"
+								style="position:absolute;bottom:-8px;left:-2px">
+							How does a bridge infer designer intent?
+						</b>
+					</li>
+				</ul>
+				<p></p>
+				<div class="fragment citation" data-fragment-index="4">
+					<h3 class="cozy">Iterating Between Tools to Create and Edit Visualizations</h3>
+					<p>
+						Alex Bigelow, Steven Drucker, Danyel Fisher, and Miriah Meyer
+						<span style="position:absolute;right:20px">Infovis 2016</span>
+					</p>
+				</div>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="hanpukuTitle" class="center">
+				<h1>Hanpuku</h1>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="domWindowHanpuku" class="center" style="text-align:center">
+				<video>
+					<source data-src="videos/01_domWindow-276.mp4" type="video/mp4"/>
+				</video>
+				<aside class="notes" data-markdown>
+					Generate a d3 visualization, skateboarding championship
+				</aside>
+			</section>
+			<section id="illustratorEditsHanpuku" class="center" style="text-align:center">
+				<video>
+					<source data-src="videos/02_illustratorEdits-270.mp4" type="video/mp4"/>
+				</video>
+				<aside class="notes" data-markdown>
+					We want to style this with Illustrator
+				</aside>
+			</section>
+			<section id="moveTitleHanpuku" class="center" style="text-align:center">
+				<video>
+					<source data-src="videos/03_moveTitle-265.mp4" type="video/mp4"/>
+				</video>
+				<aside class="notes" data-markdown>
+					This new background clahes with our earlier edits...
+					we can move the title... but adjusting all those nodes would be a pain
+				</aside>
+			</section>
+			<section id="d3EditsHanpuku" class="center" style="text-align:center">
+				<video>
+					<source data-src="videos/04_d3Edits-272.mp4" type="video/mp4"/>
+				</video>
+				<aside class="notes" data-markdown>
+					We can move it back to the dom to update the positions
+				</aside>
+			</section>
 			<section id="proposedResearchTitle" class="center">
 				<h1 class="cozy">Proposed research</h1>
 				<h3>
@@ -405,6 +735,73 @@
 					<span class="lightGreen">drawn</span>
 					<span class="bashful">visualizations</span>
 				</h3>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="hboRevisit">
+				<svg width="1920" height="1080"></svg>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="proposedChallenges">
+				<h1 class="cozy">Proposed research</h1>
+				<h3>
+					<span class="bashful">Iteration with</span>
+					<span class="lightGreen">drawn</span>
+					<span class="bashful">visualizations</span>
+				</h3>
+				<ul>
+					<li class="fragment">
+						<b>Key idea:</b> learn rules from patterns in a drawing
+					</li>
+					<li class="fragment">
+						Anticipated Challenges, Contributions:
+						<ul>
+							<li class="fragment">How can the user indicate data bindings?</li>
+							<li class="fragment">How can the computer discover rules?</li>
+							<li class="fragment">How can an interface communicate rules?</li>
+							<li class="fragment">How can the user edit and apply discovered rules?</li>
+							<li class="fragment">How can we do these things with real graphics formats?</li>
+						</ul>
+					</li>
+				</ul>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="currentProgress">
+				<svg width="1920" height="1080"></svg>
+				<aside class="notes" data-markdown>
+					Notes
+				</aside>
+			</section>
+			<section id="timeline">
+				<h1 class="cozy">Proposed research</h1>
+				<h3>
+					<span class="bashful">Iteration with</span>
+					<span class="lightGreen">drawn</span>
+					<span class="bashful">visualizations</span>
+				</h3>
+				<ul>
+					<li class="fragment">
+						Timeline:
+						<ul>
+							<li class="fragment">January 2018: Finish inference module, adapt Hanpuku codebase</li>
+							<li class="fragment">February 2018: Demonstrate usefulness by example</li>
+							<li class="fragment">March 2018: Write, submit paper to InfoVis / UIST</li>
+							<li class="fragment">May 2018: Write, defend dissertation</li>
+						</ul>
+					</li>
+					<li class="fragment">
+						Future Work:
+						<ul>
+							<li class="fragment">Non-linear, more advanced structural rules</li>
+							<li class="fragment">Prototyping modules for usability, not just feasibility</li>
+						</ul>
+					</li>
+				</ul>
 				<aside class="notes" data-markdown>
 					Notes
 				</aside>
@@ -422,6 +819,9 @@
 	<script type="application/javascript" src="builds/nonTransferableElements.js"></script>
 	<script type="application/javascript" src="builds/mergeWorkflow.js"></script>
 	<script type="application/javascript" src="builds/hboWorkflow.js"></script>
+	<script type="application/javascript" src="builds/motivation.js"></script>
+	<script type="application/javascript" src="builds/hboRevisit.js"></script>
+	<script type="application/javascript" src="builds/currentProgress.js"></script>
 </body>
 
 </html>
