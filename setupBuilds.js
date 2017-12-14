@@ -219,6 +219,10 @@ function handleStep (sectionId, stepNo) {
         svg.node().appendChild(el);
         // appendChild doesn't make a copy; it just moves it to the end
       }
+      // ugly hack #2: always push data-build elements to the front
+      if (el.dataset && el.dataset.build) {
+        svg.node().appendChild(el);
+      }
     });
 
   // Finally, check if we're supposed to auto-advance after this step
