@@ -95,6 +95,7 @@ addBuild('hboRevisit', [
     }
   },
   { // font rule
+    popBuildTags: true,
     showBuildTags: [
       'constantRule'
     ],
@@ -115,6 +116,7 @@ addBuild('hboRevisit', [
     }
   },
   { // zoom to structure
+    popBuildTags: true,
     showBuildTags: [
       'constantRule'
     ],
@@ -135,6 +137,7 @@ addBuild('hboRevisit', [
     }
   },
   { // structure label
+    popBuildTags: true,
     showBuildTags: [
       'constantRule',
       'structureRule'
@@ -156,6 +159,7 @@ addBuild('hboRevisit', [
     }
   },
   { // transform
+    popBuildTags: true,
     showBuildTags: [
       'constantRule',
       'structureRule'
@@ -177,6 +181,7 @@ addBuild('hboRevisit', [
     }
   },
   { // data rule
+    popBuildTags: true,
     showBuildTags: [
       'constantRule',
       'structureRule',

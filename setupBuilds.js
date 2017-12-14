@@ -220,7 +220,7 @@ function handleStep (sectionId, stepNo) {
         // appendChild doesn't make a copy; it just moves it to the end
       }
       // ugly hack #2: always push data-build elements to the front
-      if (el.dataset && el.dataset.build) {
+      if (step.popBuildTags && el.dataset && el.dataset.build) {
         svg.node().appendChild(el);
       }
     });
